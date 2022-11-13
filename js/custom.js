@@ -24,7 +24,9 @@ $(document).ready(function(){
         console.log(all);
         $(this).css("grid-row-end" , `span ${final}`);
     });
-
+    $('.navbar-brand').click(function(){
+        window.location = 'index.html';   
+    })
     $(".content").fancybox();
 
 });

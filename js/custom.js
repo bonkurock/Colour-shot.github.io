@@ -16,6 +16,14 @@ $(document).ready(function(){
             $(this).text("Show More +");
     });
 
+    $('.navbar-brand').click(function(){
+        window.location = 'index.html';   
+    })
+    $(".content").fancybox();
+
+});
+
+$(window).on('load', function () {
     $('.gallery-item').each(function(i) {
         var height = $(this).children('.content').height();
         console.log(height);
@@ -24,11 +32,6 @@ $(document).ready(function(){
         console.log(all);
         $(this).css("grid-row-end" , `span ${final}`);
     });
-    $('.navbar-brand').click(function(){
-        window.location = 'index.html';   
-    })
-    $(".content").fancybox();
-
 });
 
 function sendEmail(title, email, message) {

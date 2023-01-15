@@ -37,9 +37,9 @@ $(window).on('load', function () {
     });
 });
 
-let contactForm = document.getElementById('contact-form').onsubmit = function() {sendEmail(title, email, message)};
+let contactForm = document.getElementById('contact-form').onsubmit = function() {sendEmail()};
 
-function sendEmail(title, email, message) {
+function sendEmail() {
 
     var title= $('#name').val();
     var email= $('#email').val();
